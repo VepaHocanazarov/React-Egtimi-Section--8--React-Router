@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import "./App.css";
-import { BrowserRouter as Router } from 'react-router-dom';
+import index from "./index";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
 
-      <Router>
-      <div className='App'>
+   <div>
 
-        
-        
-      </div>
-      </Router>
+    <h1>App</h1>
+    
+   </div>
     );
   }
 }
