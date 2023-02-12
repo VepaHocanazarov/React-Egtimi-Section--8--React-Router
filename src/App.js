@@ -1,17 +1,23 @@
 import React, { Component } from 'react';
 import "./App.css";
-import index from "./index";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import About from "./About";
+import News from "./News";
+import { BrowserRouter as Router, Link, NavLink, Route, Routes } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
+      <div>
 
-   <div>
-
-    <h1>App</h1>
-    
-   </div>
+        <NavLink className="vepa" to="/About">About</NavLink>
+        <br /><br />
+        <NavLink className="vepa" to="/News">News</NavLink>
+        
+        <Routes>
+          <Route path='/About' element={<About />} />
+          <Route path='/News' element={<News />} />
+        </Routes>
+      </div>
     );
   }
 }
