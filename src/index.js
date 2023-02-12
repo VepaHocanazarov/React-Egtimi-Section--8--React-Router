@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter} from 'react-router-dom';
+import { Redirect } from "react-router-dom"
 
 // const News = ()=>{
 //   return (<h1>İletişim</h1>)

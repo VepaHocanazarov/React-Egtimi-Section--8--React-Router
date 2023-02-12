@@ -12,10 +12,12 @@ code {
     monospace;
 }
 
-.vepa{
- border-radius: 5px;
+.vepa {
+  border-radius: 5px;
   text-decoration: none;
   margin: 10px;
   padding: 5px;
-  border: 2px solid chartreuse ;
-};
+  border: 2px solid chartreuse;
+}
+
+;
