@@ -6,20 +6,27 @@ import About from './About';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
+const News = ()=>{
+  return (<h1>İletişim</h1>)
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+root. render(
 
   <Router>
 
     <Link to="/">App</Link>
     <br /><br />
     <Link to="/About">About</Link>
+    <br /><br />
+    <Link to="/News">News</Link>
 
 
 
     <Routes>
-      <Route path='/'  element={<App />} />;
+      <Route path='/' element={<App />} />;
       <Route path='/About' element={<About />} />
+      <Route path='/news' element={<News/> } />
     </Routes>
 
     
