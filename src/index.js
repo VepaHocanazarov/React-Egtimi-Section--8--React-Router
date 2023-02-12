@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import About from './About';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, NavLink} from 'react-router-dom';
 
 const News = ()=>{
   return (<h1>İletişim</h1>)
@@ -15,11 +15,11 @@ root. render(
 
   <Router>
 
-    <Link to="/">App</Link>
+    <NavLink className="vepa" to="/">App</NavLink>
     <br /><br />
-    <Link to="/About">About</Link>
+    <NavLink className="vepa"  to="/About">About</NavLink>
     <br /><br />
-    <Link to="/News">News</Link>
+    <NavLink className="vepa"  to="/News">News</NavLink>
 
 
 
